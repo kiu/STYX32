@@ -10,10 +10,6 @@ STYX32 - STM32 In-Circuit-Programming
 - [BOM](REV_A/STYX32-bom.ods): Bill of materials [(PDF)](REV_A/STYX32-bom.pdf)
 - [firmware](firmware/): STM32CubeIDE project
 
-# Usage
-- [template](template/): KiCad template
-- [footprints](footprints/): KiCad footprints
-
 # Links
 - [IDCto127](https://github.com/kiu/IDCto127)
 
