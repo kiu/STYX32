@@ -86,16 +86,16 @@ PUTCHAR_PROTOTYPE {
 }
 
 void HAL_GPIO_EXTI_Rising_Callback(uint16_t pin) {
-	if (pin == STM_TX_Pin) {
-		led_status |= MASK_STM_TX;
-	}
-
 	if (pin == STM_BOOT0_Pin) {
 		led_status |= MASK_STM_BOOT0;
 	}
 }
 
 void HAL_GPIO_EXTI_Falling_Callback(uint16_t pin) {
+	// UART lines idle high: the start bit is a falling edge
+	if (pin == STM_TX_Pin) {
+		led_status |= MASK_STM_TX;
+	}
 	if (pin == STM_RX_Pin) {
 		led_status |= MASK_STM_RX;
 	}
@@ -118,6 +118,10 @@ void leds_on() {
 	led_status = 0;
 	uint32_t now = HAL_GetTick() + DELAY;
 
+	if (local & MASK_STM_TX) {
+		START_TX = now;
+		HAL_GPIO_WritePin(LED_STM_TX_GPIO_Port, LED_STM_TX_Pin, GPIO_PIN_SET);
+	}
 	if (local & MASK_STM_RX) {
 		START_RX = now;
 		HAL_GPIO_WritePin(LED_STM_RX_GPIO_Port, LED_STM_RX_Pin, GPIO_PIN_SET);
@@ -143,7 +147,7 @@ void leds_on() {
 void leds_off() {
 	uint32_t now = HAL_GetTick();
 
-	if (now > START_TX && HAL_GPIO_ReadPin(STM_TX_GPIO_Port, STM_TX_Pin) == 0) {
+	if (now > START_TX && HAL_GPIO_ReadPin(STM_TX_GPIO_Port, STM_TX_Pin) != 0) {
 		HAL_GPIO_WritePin(LED_STM_TX_GPIO_Port, LED_STM_TX_Pin, GPIO_PIN_RESET);
 	}
 	if (now > START_RX && HAL_GPIO_ReadPin(STM_RX_GPIO_Port, STM_RX_Pin) != 0) {

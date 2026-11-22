@@ -13,3 +13,6 @@ fp-info-cache
 **/unreleased/
 .~lock.*
 tmp.bin
+
+# Python
+__pycache__/
