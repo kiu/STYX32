@@ -147,7 +147,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93b6d8ac-9db9-453f-b72d-0822ce58ecf4")
+			(uuid "e952fd77-5f2b-4482-904b-78e7dfee071f")
 			(effects
 				(font
 					(size 1 1)
@@ -155,6 +155,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/0731ed39-9ff7-4e4f-8f60-16131aaf1969")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -750,7 +751,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bfb3a867-5b31-4cae-9247-7d6e58cec312")
+			(uuid "60cbbe9e-60e2-43ee-a78c-271aa15b9c34")
 			(effects
 				(font
 					(size 1 1)
@@ -758,6 +759,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/7130c93e-7807-4183-ae1f-7b801167f440")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -1353,7 +1355,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0a2ee73d-94ba-404d-b5dd-937b6989f09f")
+			(uuid "236513f3-2cf0-41ce-a46e-93c3f6f8484e")
 			(effects
 				(font
 					(size 1 1)
@@ -1361,6 +1363,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/0c25d60e-2e0a-4f83-9b2a-419bf5d0c75a")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -1956,7 +1959,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3d2b349-9443-4e9e-aef8-95528e5a00fb")
+			(uuid "c3d1aa29-cad8-415d-adc9-3c63dcff1e96")
 			(effects
 				(font
 					(size 1 1)
@@ -1964,6 +1967,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/784098de-4991-4db6-b8d5-58c8bc102ae4")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -2580,7 +2584,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "64bc422b-d828-47a1-aa05-db66c5e2d05a")
+			(uuid "dd96f799-1284-4242-98b2-a5d29d4cb075")
 			(effects
 				(font
 					(size 1 1)
@@ -2588,6 +2592,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/56ee88f8-d906-4738-a4b2-9c28561caee4")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -3209,7 +3214,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "02657068-6833-4ccd-a3b2-918a68759418")
+			(uuid "b7a86f72-91e0-4ead-86bb-fa5155ab04aa")
 			(effects
 				(font
 					(size 1 1)
@@ -3217,6 +3222,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/e026302a-0c9c-44b9-a954-1b20b4908c89")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -3739,7 +3745,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "14da8c44-b794-4667-9dd0-018e23596a34")
+			(uuid "a3deec17-37e7-4df4-bf41-54c0c9ede197")
 			(effects
 				(font
 					(size 1 1)
@@ -3747,6 +3753,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/98c879c7-b5cb-4f5f-b477-44ba7b606946")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -4271,7 +4278,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "50dba47a-6ac4-48df-886a-8090f36dfb2c")
+			(uuid "e2a88aa1-b9b3-4f1c-9192-2e8c73198e3f")
 			(effects
 				(font
 					(size 1 1)
@@ -4279,6 +4286,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/983f1ae5-643a-4f96-aa38-c54cfae73d8a")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -4806,7 +4814,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2acd9bfc-c203-41fc-97de-f6b7bf0e7575")
+			(uuid "203dca77-3ecb-4f9f-99d9-2806cb81b7cb")
 			(effects
 				(font
 					(size 1 1)
@@ -4814,6 +4822,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/a7c0eb63-8cb9-4ba6-8788-f6a9f6c16a29")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -5339,7 +5348,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a0cc3b24-3a0f-4036-8ecc-8ede5cfba0cc")
+			(uuid "9fe4b48c-5a47-4459-912c-9554457f28af")
 			(effects
 				(font
 					(size 1 1)
@@ -5347,6 +5356,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/c39c0b95-3d40-4156-8d27-d3a95077d3f8")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -6032,7 +6042,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9af0d40b-d761-4e01-8f86-8a7442972b37")
+			(uuid "bc47ad62-47f7-4d25-b93c-0ec59964c420")
 			(effects
 				(font
 					(size 1 1)
@@ -6040,6 +6050,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/6e5f2283-6cf8-4ec2-9d10-7be4397c622d")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -6645,7 +6656,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ec30acad-5467-42e4-9b13-1f2aa7d80051")
+			(uuid "acae6a7c-05f3-45c2-8a29-8b283094ab7f")
 			(effects
 				(font
 					(size 1 1)
@@ -6653,6 +6664,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/2c0b65a5-6245-4309-887c-3bde29f94c28")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -7177,7 +7189,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7164a996-2076-40bd-8402-e72348853c81")
+			(uuid "4307107c-8112-4e8b-81c3-4dda00e54526")
 			(effects
 				(font
 					(size 1 1)
@@ -7185,6 +7197,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/a103ea53-dc38-4f53-91c7-b6e38e1fefbb")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -7792,7 +7805,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f68454e3-95b6-4861-b00c-b1bf19f0528f")
+			(uuid "5f052924-0203-4e7b-83e6-7e6087d8b33f")
 			(effects
 				(font
 					(size 1 1)
@@ -7800,6 +7813,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/8a166698-296e-4d6d-b2d8-94a00adc0bb7")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -8495,7 +8509,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9525f1db-48dd-400d-8774-4f3a4652dd34")
+			(uuid "2a2e1f8c-ac2d-4ceb-b1ae-a6ae23b97a8e")
 			(effects
 				(font
 					(size 1 1)
@@ -8503,6 +8517,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/b2f19636-882d-488a-84a6-3c8f3160f760")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -9028,7 +9043,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cf284c06-a997-494f-8558-2aa1297fcdad")
+			(uuid "c160331b-d067-41b6-8501-351ab9f954e6")
 			(effects
 				(font
 					(size 1 1)
@@ -9036,6 +9051,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/5596115e-09ca-4bc8-bb1f-152d101e7d0a")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -9677,7 +9693,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5391f2cd-759f-48bd-8185-5d93c739d7df")
+			(uuid "405a0517-bf31-46c7-ad38-83b4bcb8df85")
 			(effects
 				(font
 					(size 1 1)
@@ -9685,6 +9701,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/8167d348-f958-4ca0-bcc4-7f27918ac977")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -10336,7 +10353,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2cc354bc-6c32-487b-bf49-975737c67976")
+			(uuid "4c587fa2-fe8e-4dd9-8ae6-7ec05f501e9e")
 			(effects
 				(font
 					(size 1 1)
@@ -10344,6 +10361,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/774df553-47b0-4e39-960d-fd9f804043a8")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -10917,7 +10935,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5b79101-153f-47a1-9883-01c1e9d54f1e")
+			(uuid "a456479a-4b17-4711-ab7b-455f1d14469f")
 			(effects
 				(font
 					(size 1 1)
@@ -10925,6 +10943,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/aa43c095-37a8-452e-b6c0-d45aa515f59f")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -11495,7 +11514,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "091a66c2-9aea-4d28-87d4-94a711575dc6")
+			(uuid "e9efc2ab-a012-43e1-925c-1a22751eee43")
 			(effects
 				(font
 					(size 1 1)
@@ -11503,6 +11522,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "STYX32*")
 		(path "/4a373022-58cf-4752-ac36-92b5bcd2f3ea")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")

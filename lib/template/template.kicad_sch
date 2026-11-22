@@ -90,6 +90,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_A_2x03_P1.27mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -168,6 +190,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_A_2x03_P1.27mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -364,6 +388,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_A_2x03_P1.27mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -442,6 +488,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_A_2x03_P1.27mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -638,6 +686,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_A_2x03_P2.54mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -716,6 +786,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_A_2x03_P2.54mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -912,6 +984,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_A_2x03_P2.54mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -990,6 +1084,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_A_2x03_P2.54mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -1186,6 +1282,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B1_2x03_P1.27mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -1264,6 +1382,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B1_2x03_P1.27mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -1460,6 +1580,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B1_2x03_P1.27mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -1538,6 +1680,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B1_2x03_P1.27mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -1734,6 +1878,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B1_2x03_P2.54mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -1812,6 +1978,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B1_2x03_P2.54mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -2008,6 +2176,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B1_2x03_P2.54mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -2086,6 +2276,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B1_2x03_P2.54mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -2282,6 +2474,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B2_2x03_P1.27mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -2360,6 +2574,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B2_2x03_P1.27mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -2556,6 +2772,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B2_2x03_P1.27mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -2634,6 +2872,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B2_2x03_P1.27mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -2830,6 +3070,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B2_2x03_P2.54mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -2908,6 +3170,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B2_2x03_P2.54mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -3104,6 +3368,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_B2_2x03_P2.54mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -3182,6 +3468,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_B2_2x03_P2.54mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -3378,6 +3666,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_C_2x04_P1.27mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -3478,6 +3788,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_C_2x04_P1.27mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -3710,6 +4022,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_C_2x04_P1.27mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -3810,6 +4144,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_C_2x04_P1.27mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -4042,6 +4378,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_C_2x04_P2.54mm_SMD_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -4142,6 +4500,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_C_2x04_P2.54mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -4374,6 +4734,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_C_2x04_P2.54mm_THT_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -4474,6 +4856,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_C_2x04_P2.54mm_THT_1_1"
 				(pin passive line
 					(at -6.35 2.54 0)
 					(length 3.81)
@@ -4706,6 +5090,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_D_2x05_P1.27mm_SMD_0_1"
 				(rectangle
 					(start -2.54 6.35)
@@ -4828,6 +5234,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_D_2x05_P1.27mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 5.08 0)
 					(length 3.81)
@@ -5096,6 +5504,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_D_2x05_P1.27mm_THT_0_1"
 				(rectangle
 					(start -2.54 6.35)
@@ -5218,6 +5648,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_D_2x05_P1.27mm_THT_1_1"
 				(pin passive line
 					(at -6.35 5.08 0)
 					(length 3.81)
@@ -5486,6 +5918,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_D_2x05_P2.54mm_SMD_0_1"
 				(rectangle
 					(start -2.54 6.35)
@@ -5608,6 +6062,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_D_2x05_P2.54mm_SMD_1_1"
 				(pin passive line
 					(at -6.35 5.08 0)
 					(length 3.81)
@@ -5876,6 +6332,28 @@
 					)
 				)
 			)
+			(property "ki_keywords" "connector STYX32 IDC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "STYX32*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "STYX32_D_2x05_P2.54mm_THT_0_1"
 				(rectangle
 					(start -2.54 6.35)
@@ -5998,6 +6476,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "STYX32_D_2x05_P2.54mm_THT_1_1"
 				(pin passive line
 					(at -6.35 5.08 0)
 					(length 3.81)

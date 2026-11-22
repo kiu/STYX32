@@ -1,1917 +1,6661 @@
 (kicad_symbol_lib
-  (version 20251024)
-  (generator "konnect")
-  (generator_version "10.0")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  (symbol "STYX32_A_2x03_P2.54mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_A" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_A_2x03_P2.54mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 2.54mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492441" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_A_2x03_P2.54mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "BOOT0" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_A_2x03_P2.54mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_A" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_A_2x03_P2.54mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 2.54mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492445" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_A_2x03_P2.54mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "BOOT0" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_A_2x03_P1.27mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_A" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_A_2x03_P1.27mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 1.27mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372545" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_A_2x03_P1.27mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "BOOT0" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_A_2x03_P1.27mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_A" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_A_2x03_P1.27mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 1.27mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372553" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_A_2x03_P1.27mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "BOOT0" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B1_2x03_P2.54mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B1" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B1_2x03_P2.54mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 2.54mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492441" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B1_2x03_P2.54mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B1_2x03_P2.54mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B1" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B1_2x03_P2.54mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 2.54mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492445" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B1_2x03_P2.54mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B1_2x03_P1.27mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B1" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B1_2x03_P1.27mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 1.27mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372545" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B1_2x03_P1.27mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B1_2x03_P1.27mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B1" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B1_2x03_P1.27mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 1.27mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372553" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B1_2x03_P1.27mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B2_2x03_P2.54mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B2" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B2_2x03_P2.54mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 2.54mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492441" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B2_2x03_P2.54mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B2_2x03_P2.54mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B2" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B2_2x03_P2.54mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 2.54mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492445" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B2_2x03_P2.54mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B2_2x03_P1.27mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B2" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B2_2x03_P1.27mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 1.27mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372545" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B2_2x03_P1.27mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_B2_2x03_P1.27mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_B2" (at 0 -6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_B2_2x03_P1.27mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 1.27mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372553" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_B2_2x03_P1.27mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_C_2x04_P2.54mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_C" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_C_2x04_P2.54mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C17179451.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 2.54mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C17179451" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_C_2x04_P2.54mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_C_2x04_P2.54mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_C" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_C_2x04_P2.54mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C601965.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 2.54mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C601965" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_C_2x04_P2.54mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_C_2x04_P1.27mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_C" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_C_2x04_P1.27mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372546.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 1.27mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372546" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_C_2x04_P1.27mm_THT_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_C_2x04_P1.27mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 6.3500 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_C" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_C_2x04_P1.27mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372554.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 1.27mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372554" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_C_2x04_P1.27mm_SMD_0_1"
-      (rectangle (start -2.54 3.81) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "TX" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RX" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_D_2x05_P2.54mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_D" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_D_2x05_P2.54mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C5665.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 2.54mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C5665" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_D_2x05_P2.54mm_THT_0_1"
-      (rectangle (start -2.54 6.35) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 5.207) (end -1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 5.207) (end 1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 5.08 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 5.08 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin no_connect line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "KEY" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TDI" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "9" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "10" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_D_2x05_P2.54mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_D" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_D_2x05_P2.54mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C492446.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 2.54mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C492446" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_D_2x05_P2.54mm_SMD_0_1"
-      (rectangle (start -2.54 6.35) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 5.207) (end -1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 5.207) (end 1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 5.08 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 5.08 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin no_connect line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "KEY" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TDI" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "9" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "10" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_D_2x05_P1.27mm_THT"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_D" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_D_2x05_P1.27mm_THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372547.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 1.27mm pitch, THT" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372547" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_D_2x05_P1.27mm_THT_0_1"
-      (rectangle (start -2.54 6.35) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 5.207) (end -1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 5.207) (end 1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 5.08 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 5.08 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin no_connect line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "KEY" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TDI" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "9" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "10" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
-
-  (symbol "STYX32_D_2x05_P1.27mm_SMD"
-    (pin_names
-      (offset 1.016)
-      (hide yes))
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (duplicate_pin_numbers_are_jumpers no)
-    (property "Reference" "J" (at 0 8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Value" "STYX32_D" (at 0 -8.8900 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "STYX32:STYX32_D_2x05_P1.27mm_SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C42372555.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 1.27mm pitch, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Source" "https://github.com/kiu/STYX32" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (property "LCSC" "C42372555" (at 0 0 0)
-			(hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-    (symbol "STYX32_D_2x05_P1.27mm_SMD_0_1"
-      (rectangle (start -2.54 6.35) (end 2.54 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (rectangle (start -2.54 5.207) (end -1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 5.207) (end 1.27 4.953)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 2.667) (end -1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 2.667) (end 1.27 2.413)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 0.127) (end -1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 0.127) (end 1.27 -0.127)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -2.413) (end -1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -2.413) (end 1.27 -2.667)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start -2.54 -4.953) (end -1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-      (rectangle (start 2.54 -4.953) (end 1.27 -5.207)
-        (stroke (width 0.1524) (type default))
-        (fill (type none))
-      )
-    (pin passive line (at -6.35 5.08 0)
-      (length 3.81)
-      (name "3V3" (effects (font (size 1.27 1.27))))
-      (number "1" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 5.08 180)
-      (length 3.81)
-      (name "SWDIO" (effects (font (size 1.27 1.27))))
-      (number "2" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 2.54 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "3" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 2.54 180)
-      (length 3.81)
-      (name "SWDCLK" (effects (font (size 1.27 1.27))))
-      (number "4" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 0 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "5" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 0 180)
-      (length 3.81)
-      (name "SWO" (effects (font (size 1.27 1.27))))
-      (number "6" (effects (font (size 1.27 1.27))))
-    )
-    (pin no_connect line (at -6.35 -2.54 0)
-      (length 3.81)
-      (name "KEY" (effects (font (size 1.27 1.27))))
-      (number "7" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -2.54 180)
-      (length 3.81)
-      (name "TDI" (effects (font (size 1.27 1.27))))
-      (number "8" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at -6.35 -5.08 0)
-      (length 3.81)
-      (name "GND" (effects (font (size 1.27 1.27))))
-      (number "9" (effects (font (size 1.27 1.27))))
-    )
-    (pin passive line (at 6.35 -5.08 180)
-      (length 3.81)
-      (name "RESET" (effects (font (size 1.27 1.27))))
-      (number "10" (effects (font (size 1.27 1.27))))
-    )
-    )
-    (embedded_fonts no)
-  )
+	(version 20251024)
+	(generator "gen_symbols.py")
+	(generator_version "10.0")
+	(symbol "STYX32_A_2x03_P2.54mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_A"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_A_2x03_P2.54mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 2.54mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492441"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P2.54mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P2.54mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "BOOT0"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_A_2x03_P2.54mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_A"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_A_2x03_P2.54mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 2.54mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492445"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P2.54mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P2.54mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "BOOT0"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_A_2x03_P1.27mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_A"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_A_2x03_P1.27mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 1.27mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372545"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P1.27mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P1.27mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "BOOT0"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_A_2x03_P1.27mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_A"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_A_2x03_P1.27mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 A connector: serial (TX, RX, BOOT0). IDC box header 2x03, 1.27mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372553"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P1.27mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_A_2x03_P1.27mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "BOOT0"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B1_2x03_P2.54mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B1"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B1_2x03_P2.54mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 2.54mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492441"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P2.54mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P2.54mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B1_2x03_P2.54mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B1"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B1_2x03_P2.54mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 2.54mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492445"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P2.54mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P2.54mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B1_2x03_P1.27mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B1"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B1_2x03_P1.27mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 1.27mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372545"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P1.27mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P1.27mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B1_2x03_P1.27mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B1"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B1_2x03_P1.27mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B1 connector: SWD with serial TX on pin 6. IDC box header 2x03, 1.27mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372553"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P1.27mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B1_2x03_P1.27mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B2_2x03_P2.54mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B2"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B2_2x03_P2.54mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492441.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 2.54mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492441"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P2.54mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P2.54mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B2_2x03_P2.54mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B2"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B2_2x03_P2.54mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492445.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 2.54mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492445"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P2.54mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P2.54mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B2_2x03_P1.27mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B2"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B2_2x03_P1.27mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372545.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 1.27mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372545"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P1.27mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P1.27mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_B2_2x03_P1.27mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_B2"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_B2_2x03_P1.27mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372553.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 B2 connector: SWD with SWO on pin 6. IDC box header 2x03, 1.27mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372553"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P1.27mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_B2_2x03_P1.27mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_C_2x04_P2.54mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_C"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_C_2x04_P2.54mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17179451.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 2.54mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17179451"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P2.54mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P2.54mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_C_2x04_P2.54mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_C"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_C_2x04_P2.54mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C601965.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 2.54mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C601965"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P2.54mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P2.54mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_C_2x04_P1.27mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_C"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_C_2x04_P1.27mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372546.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 1.27mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372546"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P1.27mm_THT_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P1.27mm_THT_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_C_2x04_P1.27mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_C"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_C_2x04_P1.27mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372554.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 C connector: SWD with SWO plus serial (TX, RX). IDC box header 2x04, 1.27mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372554"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P1.27mm_SMD_0_1"
+			(rectangle
+				(start -2.54 3.81)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_C_2x04_P1.27mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "TX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RX"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_D_2x05_P2.54mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_D"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_D_2x05_P2.54mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5665.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 2.54mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5665"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P2.54mm_THT_0_1"
+			(rectangle
+				(start -2.54 6.35)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 5.207)
+				(end -1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 5.207)
+				(end 1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P2.54mm_THT_1_1"
+			(pin passive line
+				(at -6.35 5.08 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 5.08 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "KEY"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TDI"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "9"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "10"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_D_2x05_P2.54mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_D"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_D_2x05_P2.54mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C492446.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 2.54mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C492446"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P2.54mm_SMD_0_1"
+			(rectangle
+				(start -2.54 6.35)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 5.207)
+				(end -1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 5.207)
+				(end 1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P2.54mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 5.08 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 5.08 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "KEY"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TDI"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "9"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "10"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_D_2x05_P1.27mm_THT"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_D"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_D_2x05_P1.27mm_THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372547.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 1.27mm pitch, THT"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372547"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P1.27mm_THT_0_1"
+			(rectangle
+				(start -2.54 6.35)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 5.207)
+				(end -1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 5.207)
+				(end 1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P1.27mm_THT_1_1"
+			(pin passive line
+				(at -6.35 5.08 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 5.08 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "KEY"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TDI"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "9"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "10"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STYX32_D_2x05_P1.27mm_SMD"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STYX32_D"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STYX32:STYX32_D_2x05_P1.27mm_SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372555.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STYX32 D connector: ARM Cortex 10-pin debug (SWD/JTAG). IDC box header 2x05, 1.27mm pitch, SMD"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Source" "https://github.com/kiu/STYX32"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector STYX32 IDC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "STYX32*"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P1.27mm_SMD_0_1"
+			(rectangle
+				(start -2.54 6.35)
+				(end 2.54 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -2.54 5.207)
+				(end -1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 5.207)
+				(end 1.27 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 2.667)
+				(end -1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 2.667)
+				(end 1.27 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 0.127)
+				(end -1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 0.127)
+				(end 1.27 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -2.413)
+				(end -1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -2.413)
+				(end 1.27 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -2.54 -4.953)
+				(end -1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.54 -4.953)
+				(end 1.27 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "STYX32_D_2x05_P1.27mm_SMD_1_1"
+			(pin passive line
+				(at -6.35 5.08 0)
+				(length 3.81)
+				(name "3V3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "1"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 5.08 180)
+				(length 3.81)
+				(name "SWDIO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "2"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "3"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 2.54 180)
+				(length 3.81)
+				(name "SWDCLK"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "4"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "5"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "SWO"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "6"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -6.35 -2.54 0)
+				(length 3.81)
+				(name "KEY"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "7"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -2.54 180)
+				(length 3.81)
+				(name "TDI"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "8"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -5.08 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "9"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -5.08 180)
+				(length 3.81)
+				(name "RESET"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+				(number "10"
+					(effects
+					(font
+						(size 1.27 1.27)
+					)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )
