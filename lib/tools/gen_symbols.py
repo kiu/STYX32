@@ -30,6 +30,9 @@ CONNECTORS = {
 }
 NO_CONNECT = {"KEY"}
 VARIANTS = ["P2.54mm_THT", "P2.54mm_SMD", "P1.27mm_THT", "P1.27mm_SMD"]
+EDGE = list(CONNECTORS)   # connectors with a card edge footprint (gen_footprints.py EDGE)
+# card edge: no part on the board; Mate = the matching edge slot socket (WingTAT ED0xBGFBK)
+MATE = {3: "C5173287", 4: "C5173288", 5: "C5173289"}
 LCSC = {  # (rows, variant) -> LCSC part number
     (3, "P2.54mm_THT"): "C492441", (3, "P2.54mm_SMD"): "C492445",
     (3, "P1.27mm_THT"): "C42372545", (3, "P1.27mm_SMD"): "C42372553",
@@ -81,25 +84,30 @@ def symbol(conn, variant):
     what, names = CONNECTORS[conn]
     rows = len(names) // 2
     name = "STYX32_%s_2x%02d_%s" % (conn, rows, variant)
-    lcsc = LCSC[(rows, variant)]
+    edge = variant == "P2.54mm_Edge"
+    lcsc = MATE[rows] if edge else LCSC[(rows, variant)]
     # pin rows on the 2.54 mm grid, pin 1 on top (5 rows: centred, else top row at +2.54)
     ys = [2.54 * ((2 if rows == 5 else 1) - i) for i in range(rows)]
     top, bottom = ys[0] + 1.27, ys[-1] - 1.27
-    desc = "STYX32 %s connector: %s. IDC box header 2x%02d, %s pitch, %s" % (
-        conn, what, rows, variant[1:7], variant[-3:])
+    if edge:
+        desc = ("STYX32 %s connector: %s. Card edge (gold fingers) 2x%02d, 2.54 mm pitch, "
+                "mates with edge slot %s" % (conn, what, rows, lcsc))
+    else:
+        desc = "STYX32 %s connector: %s. IDC box header 2x%02d, %s pitch, %s" % (
+            conn, what, rows, variant[1:7], variant[-3:])
 
     out = ['\t(symbol "%s"\n' % name,
            '\t\t(pin_names\n\t\t\t(offset 1.016)\n\t\t\t(hide yes)\n\t\t)\n',
-           '\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n'
-           '\t\t(duplicate_pin_numbers_are_jumpers no)\n',
+           '\t\t(exclude_from_sim no)\n\t\t(in_bom %s)\n\t\t(on_board yes)\n\t\t(in_pos_files %s)\n'
+           '\t\t(duplicate_pin_numbers_are_jumpers no)\n' % (("no", "no") if edge else ("yes", "yes")),
            prop("Reference", "J", 0, top + TEXT_GAP),
            prop("Value", "STYX32_" + conn, 0, bottom - TEXT_GAP),
            prop("Footprint", "STYX32:" + name, 0, 0, True),
            prop("Datasheet", "https://www.lcsc.com/datasheet/%s.pdf" % lcsc, 0, 0, True),
            prop("Description", desc, 0, 0, True),
            prop("Source", SOURCE, 0, 0, True),
-           prop("LCSC", lcsc, 0, 0, True),
-           prop("ki_keywords", "connector STYX32 IDC", 0, 0, True),
+           prop("Mate" if edge else "LCSC", lcsc, 0, 0, True),
+           prop("ki_keywords", "connector STYX32 " + ("card edge gold finger" if edge else "IDC"), 0, 0, True),
            prop("ki_fp_filters", "STYX32*", 0, 0, True)]
 
     out.append('\t\t(symbol "%s_0_1"\n' % name)
@@ -120,11 +128,12 @@ def symbol(conn, variant):
 
 
 def main():
-    body = "".join(symbol(c, v) for c in CONNECTORS for v in VARIANTS)
+    syms = [symbol(c, v) for c in CONNECTORS for v in VARIANTS + (["P2.54mm_Edge"] if c in EDGE else [])]
+    body = "".join(syms)
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write('(kicad_symbol_lib\n\t(version 20251024)\n\t(generator "gen_symbols.py")\n'
                 '\t(generator_version "10.0")\n' + body + ')\n')
-    print("wrote", OUT, len(CONNECTORS) * len(VARIANTS), "symbols")
+    print("wrote", OUT, len(syms), "symbols")
 
 
 if __name__ == "__main__":

@@ -31,6 +31,7 @@ CONNECTORS = {
     "D":  ["3V3", "SWDIO", "GND", "SWDCLK", "GND", "SWO", "NC", "TDI", "GND", "RES"],
 }
 VARIANTS = ["P2.54mm_THT", "P2.54mm_SMD", "P1.27mm_THT", "P1.27mm_SMD"]
+EDGE = list(CONNECTORS)   # connectors with a card edge (gold finger) footprint
 
 TEXT_H = 0.8      # silk text height (JLC minimum 0.8 mm)
 TEXT_W = 0.12     # stroke
@@ -101,12 +102,12 @@ def seg(fp, layer, width, xa, ya, xb, yb):
     fp.Add(s)
 
 
-def bar(fp, xa, ya, xb, yb):
+def bar(fp, xa, ya, xb, yb, layer=pcbnew.F_SilkS):
     """Filled silk rectangle."""
     s = pcbnew.PCB_SHAPE(fp, pcbnew.SHAPE_T_RECT)
     s.SetStart(pcbnew.VECTOR2I(mm(xa), mm(ya)))
     s.SetEnd(pcbnew.VECTOR2I(mm(xb), mm(yb)))
-    s.SetLayer(pcbnew.F_SilkS)
+    s.SetLayer(layer)
     s.SetWidth(mm(0.1))
     s.SetFilled(True)
     fp.Add(s)
@@ -140,10 +141,14 @@ def body_box(fp):
     return [pcbnew.ToMM(v) for v in (min(xs), min(ys), max(xs), max(ys))]
 
 
-def add_text(fp, text, x, y, hjust, h=TEXT_H, w=TEXT_W, layer=pcbnew.F_SilkS):
+def add_text(fp, text, x, y, hjust, h=TEXT_H, w=TEXT_W, layer=pcbnew.F_SilkS, angle=0):
     t = pcbnew.PCB_TEXT(fp)
     t.SetText(text)
     t.SetLayer(layer)
+    if layer in (pcbnew.B_SilkS, pcbnew.B_Fab):
+        t.SetMirrored(True)
+    if angle:
+        t.SetTextAngle(pcbnew.EDA_ANGLE(angle, pcbnew.DEGREES_T))
     t.SetTextSize(pcbnew.VECTOR2I(mm(h), mm(h)))
     t.SetTextThickness(mm(w))
     t.SetHorizJustify(hjust)
@@ -204,6 +209,109 @@ def build(conn, variant, out_lib):
     print("wrote", name)
 
 
+# Card edge (gold fingers) for a 2.54 mm edge slot socket, e.g. WingTAT ED06/08/10BGFBK.
+# Origin = middle of the card edge, fingers towards -y. Odd pins on F.Cu, even pins on B.Cu
+# right behind them (pin 1 opposite pin 2, like the slot's contact rows). The
+# footprint's Edge.Cuts: only the card itself (tip and sides, the same for both styles); the
+# user joins it to the board edge, straight or along the notch guide on User.Drawings.
+MATE = {3: "C5173287", 4: "C5173288", 5: "C5173289"}   # WingTAT ED0xBGFBK edge slot
+FINGER_W, FINGER_Y0, FINGER_Y1 = 1.4, -9.0, -1.0      # finger width, root, tip (1 mm from edge)
+CARD_DEPTH = 9.5        # card length that goes into the slot (slot depth 9.0 + margin)
+NOTCH_W = 2.42          # room for the slot housing beside the card (SA/ED body C - card B)
+CHAMFER = 0.5           # card corners
+PAST_EDGE = 7.0         # slot housing beyond the card edge
+
+
+def poly(fp, layer, pts):
+    s = pcbnew.PCB_SHAPE(fp, pcbnew.SHAPE_T_POLY)
+    s.SetPolyPoints([pcbnew.VECTOR2I(mm(x), mm(y)) for x, y in pts])
+    s.SetLayer(layer)
+    s.SetWidth(mm(0.1))
+    s.SetFilled(True)
+    fp.Add(s)
+
+
+def build_edge(conn, out_lib):
+    names = CONNECTORS[conn]
+    rows = len(names) // 2
+    name = "STYX32_%s_2x%02d_P2.54mm_Edge" % (conn, rows)
+    fp = pcbnew.FOOTPRINT(None)
+    fp.SetFPID(pcbnew.LIB_ID("", name))
+    fp.SetLibDescription("STYX32 %s connector, card edge (gold fingers) 2x%02d, 2.54 mm pitch, "
+                         "for a 1.6 mm board in an edge slot socket (e.g. %s). Join the card outline "
+                         "(Edge.Cuts) to the board edge, straight or along the notch guide (User.Drawings)" % (conn, rows, MATE[rows]))
+    fp.SetKeywords("STYX32 %s card edge gold finger 2.54mm" % conn)
+    fp.SetAttributes(pcbnew.FP_EXCLUDE_FROM_POS_FILES | pcbnew.FP_EXCLUDE_FROM_BOM)
+
+    span = (rows - 1) * 2.54
+    w = span / 2 + 2.54            # half card width (= slot width, 10.16 mm for 2x03)
+    n = w + NOTCH_W                 # outer side of the notches
+    d = CARD_DEPTH
+
+    for i in range(rows):
+        x = -span / 2 + i * 2.54
+        for num, cu, mask, fab in ((2 * i + 1, pcbnew.F_Cu, pcbnew.F_Mask, pcbnew.F_Fab),
+                                   (2 * i + 2, pcbnew.B_Cu, pcbnew.B_Mask, pcbnew.B_Fab)):
+            pad = pcbnew.PAD(fp)
+            pad.SetNumber(str(num))
+            pad.SetAttribute(pcbnew.PAD_ATTRIB_CONN)
+            pad.SetShape(pcbnew.F_Cu, pcbnew.PAD_SHAPE_RECTANGLE)
+            pad.SetSize(pcbnew.F_Cu, pcbnew.VECTOR2I(mm(FINGER_W), mm(FINGER_Y1 - FINGER_Y0)))
+            ls = pcbnew.LSET()
+            ls.AddLayer(cu)
+            ls.AddLayer(mask)
+            pad.SetLayerSet(ls)
+            pad.SetPosition(pcbnew.VECTOR2I(mm(x), mm((FINGER_Y0 + FINGER_Y1) / 2)))
+            fp.Add(pad)
+            add_text(fp, names[num - 1], x, (FINGER_Y0 + FINGER_Y1) / 2,
+                     pcbnew.GR_TEXT_H_ALIGN_CENTER, 0.8, 0.12, fab, 90)
+
+    # card outline on Edge.Cuts (the same for both styles): tip with chamfers and both sides,
+    # ending at (-w, -d) / (w, -d). The user joins these ends to the board edge: straight
+    # across for a card sticking out, or along the notch guide for a card cut into the board.
+    for a, b in (((-w + CHAMFER, 0), (w - CHAMFER, 0)),
+                 ((-w, -CHAMFER), (-w + CHAMFER, 0)), ((w, -CHAMFER), (w - CHAMFER, 0)),
+                 ((-w, -CHAMFER), (-w, -d)), ((w, -CHAMFER), (w, -d))):
+        seg(fp, pcbnew.Edge_Cuts, 0.1, *a, *b)
+    dw = pcbnew.Dwgs_User
+    for a, b in (((-n, -d), (-w, -d)), ((w, -d), (n, -d)), ((-n, 0), (-n, -d)), ((n, 0), (n, -d))):
+        seg(fp, dw, 0.1, *a, *b)
+    add_text(fp, "notch", -(w + n) / 2, -d / 2, pcbnew.GR_TEXT_H_ALIGN_CENTER, 0.6, 0.1, dw, 90)
+    add_text(fp, "notch", (w + n) / 2, -d / 2, pcbnew.GR_TEXT_H_ALIGN_CENTER, 0.6, 0.1, dw, 90)
+
+    # plugged slot socket: courtyard on the board only (up to the card edge, so panels with
+    # boards side by side don't overlap), the socket beyond the edge drawn on User.Drawings
+    for layer in (pcbnew.F_CrtYd, pcbnew.B_CrtYd):
+        rect(fp, layer, 0.05, -n - 0.25, -d - 0.25, n + 0.25, 0)
+    rect(fp, dw, 0.1, -n - 0.25, 0.25, n + 0.25, PAST_EDGE)
+    add_text(fp, "plugged slot %s" % MATE[rows], 0, 1.6, pcbnew.GR_TEXT_H_ALIGN_CENTER, 0.6, 0.1, dw)
+    add_text(fp, "%.1f x %.1f mm" % (2 * n + 0.5, d + 0.25 + PAST_EDGE), 0, 2.6,
+             pcbnew.GR_TEXT_H_ALIGN_CENTER, 0.6, 0.1, dw)
+
+    # orientation: triangle on top, square on the bottom, both at the pin 1 end
+    mx = -(w + span / 2 + FINGER_W / 2) / 2
+    poly(fp, pcbnew.F_SilkS, [(mx - 0.5, -8.9), (mx + 0.5, -8.9), (mx, -7.9)])
+    bar(fp, mx - 0.5, -8.9, mx + 0.5, -7.9, pcbnew.B_SilkS)
+
+    # marking on both sides above the card, reference above it
+    for layer in (pcbnew.F_SilkS, pcbnew.B_SilkS):
+        add_text(fp, "S32" + conn, 0, -d - 0.6 - MARK_H / 2, pcbnew.GR_TEXT_H_ALIGN_CENTER,
+                 MARK_H, MARK_W, layer)
+    fp.Reference().SetText("REF**")
+    fp.Reference().SetPosition(pcbnew.VECTOR2I(mm(0), mm(-d - 0.6 - MARK_H - 1.3)))
+    fp.Value().SetText(name)
+    fp.Value().SetLayer(pcbnew.F_Fab)
+    fp.Value().SetPosition(pcbnew.VECTOR2I(mm(0), mm(PAST_EDGE + 1.2)))
+
+    fp.SetField("Source", SOURCE)
+    fp.GetField("Source").SetVisible(False)
+    fp.SetField("Mate", MATE[rows])
+    fp.GetField("Mate").SetVisible(False)
+
+    pcbnew.PCB_IO_MGR.FindPlugin(pcbnew.PCB_IO_MGR.KICAD_SEXP).FootprintSave(out_lib, fp)
+    print("wrote", name)
+
+
 def main():
     flt = sys.argv[1] if len(sys.argv) > 1 else ""
     os.makedirs(LIB, exist_ok=True)
@@ -212,6 +320,9 @@ def main():
             name = "STYX32_%s_%s" % (conn, variant)
             if flt in name:
                 build(conn, variant, LIB)
+    for conn in EDGE:
+        if flt in "STYX32_%s_P2.54mm_Edge" % conn:
+            build_edge(conn, LIB)
 
 
 if __name__ == "__main__":

@@ -26,6 +26,16 @@ look like KiCad's generic 2-row connectors, link their footprint and carry the L
 The footprints show the marking (e.g. S32B2), a pin 1 mark and the key notch on the silkscreen,
 and the pin names on F.Fab.
 
+Every connector also comes as a card edge, `STYX32_<connector>_2x<rows>_P2.54mm_Edge`: gold
+fingers on both sides of a 1.6 mm board (odd pins on top, even pins below them) that plug into a
+2.54 mm edge slot socket, e.g. WingTAT ED06BGFBK / ED08BGFBK / ED10BGFBK (LCSC C5173287 / C5173288 /
+C5173289, in the symbol's `Mate` field). The socket has no key: a triangle on top and a square on
+the bottom mark the pin 1 end. The footprint brings the card outline on Edge.Cuts; join its two
+ends to your board edge, straight across for a card sticking out of the board, or along the notch
+guide on User.Drawings for a card cut into the board. The plugged socket is drawn on User.Drawings
+beyond the card edge. Card edges are not part of the BOM; ENIG is fine, a bevelled edge plugs in
+more easily.
+
 The [template](lib/template/) schematic has every connector wired to global labels
 (`STM_SWDIO`, `STM_SWDCLK`, `STM_SWO`, `STM_RESET`, `STM_TX`, `STM_RX`, `STM_BOOT0`, `STM_TDI`),
 `+3V3` and `GND`: copy a connector with its labels into your own schematic.
